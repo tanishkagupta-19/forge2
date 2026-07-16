@@ -1,5 +1,3 @@
-# forge2
-
 # Forge 2 — Multi-Agent AI System
 
 
