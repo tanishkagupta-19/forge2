@@ -1,36 +1,36 @@
-\# Architecture
+ # Architecture
 
 
 
-\## Agent Roles
+ ## Agent Roles
 
 
 
-\### Hermes (Orchestrator / Brain)
+ ### Hermes (Orchestrator / Brain)
 
-\- Decomposes the challenge into tasks
+ - Decomposes the challenge into tasks
 
-\- Assigns tasks to OpenClaw via #agent-coder
+ - Assigns tasks to OpenClaw via #agent-coder
 
-\- Tracks progress and posts structured status updates
+ - Tracks progress and posts structured status updates
 
-\- Maintains memory across sessions
+ - Maintains memory across sessions
 
-\- Runs autonomously via cron
-
-
-
-\### OpenClaw (Coding Agent / Hands)
-
-\- Receives tasks from Hermes in #agent-coder
-
-\- Writes code, runs it locally
-
-\- Reports back with: What I Did / What's Left / What Needs Your Call
+ - Runs autonomously via cron
 
 
 
-\## Slack Channel Scheme
+ ### OpenClaw (Coding Agent / Hands)
+
+ - Receives tasks from Hermes in #agent-coder
+
+ - Writes code, runs it locally
+
+ - Reports back with: What I Did / What's Left / What Needs Your Call
+
+
+
+ ## Slack Channel Scheme
 
 | Channel | Purpose |
 
@@ -44,7 +44,7 @@
 
 
 
-\## Model Routing
+ ## Model Routing
 
 | Agent | Model | Provider | Reason |
 
@@ -56,7 +56,7 @@
 
 
 
-\## Flow
+ ## Flow
 
 Human → #sprint-main → Hermes plans → assigns to OpenClaw in #agent-coder → OpenClaw codes → reports back → Human approves
 
