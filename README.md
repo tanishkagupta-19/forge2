@@ -6,31 +6,29 @@
 
 ## Architecture
 
-\- \*\*Hermes\*\* (Brain/Orchestrator): Plans, decomposes tasks, manages memory, assigns work to OpenClaw via Slack
+- **Hermes** (Brain/Orchestrator): Plans, decomposes tasks, manages memory, assigns work to OpenClaw via Slack
 
-\- \*\*OpenClaw\*\* (Hands/Coding Agent): Receives tasks, writes code, runs it, reports back in Slack
-
-
-
-\## Slack Channels
-
-\- `#sprint-main` — Human posts goals, Hermes posts plans and status
-
-\- `#agent-coder` — Hermes assigns coding tasks, OpenClaw works and reports here
-
-\- `#agent-log` — Raw agent activity and autonomous run output
+- **OpenClaw** (Hands/Coding Agent): Receives tasks, writes code, runs it, reports back in Slack
 
 
 
-\## Model Routing
+## Slack Channels
 
-\- Hermes (planning): `qwen2.5-coder` via Ollama (local, unlimited)
+- `#sprint-main` — Human posts goals, Hermes posts plans and status
 
-\- OpenClaw (execution): `google/gemini-2.5-flash`
+- `#agent-coder` — Hermes assigns coding tasks, OpenClaw works and reports here
+
+- `#agent-log` — Raw agent activity and autonomous run output
 
 
 
-\## Stack
+## Model Routing
+
+- Hermes (planning): `qwen2.5-coder` via Ollama (local, unlimited)
+- OpenClaw (execution): `google/gemini-2.5-flash`
+
+
+## Stack
 
 \- Hermes Agent v0.17.0
 
@@ -42,7 +40,7 @@
 
 
 
-\## Run Instructions
+## Run Instructions
 
 1\. Start Ollama: runs as background service
 
