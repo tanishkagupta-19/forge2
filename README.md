@@ -1,10 +1,10 @@
 # forge2
 
-\# Forge 2 — Multi-Agent AI System
+# Forge 2 — Multi-Agent AI System
 
 
 
-\## Architecture
+## Architecture
 
 \- \*\*Hermes\*\* (Brain/Orchestrator): Plans, decomposes tasks, manages memory, assigns work to OpenClaw via Slack
 
