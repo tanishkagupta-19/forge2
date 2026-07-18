@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "gateway": {
+    "port": 3000
+  },
+  "workspace": {
+    "path": "D:\\forge2"
+  },
+  "model": {
+    "provider": "ollama",
+    "id": "qwen2.5-coder",
+    "apiKey": "REDACTED"
+  },
+  "channels": {
+    "slack": {
+      "enabled": true,
+      "mode": "socket",
+      "appToken": {
+        "source": "env",
+        "provider": "default",
+        "id": "REDACTED_APP_TOKEN"
+      },
+      "botToken": {
+        "source": "env",
+        "provider": "default",
+        "id": "REDACTED_BOT_TOKEN"
+      }
+    }
+  }
+}
