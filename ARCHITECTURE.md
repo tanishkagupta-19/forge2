@@ -5,7 +5,7 @@ This build implements a multi-agent orchestrated workflow producing a full stack
 
 ### 1. Agents
 - **Hermes (Brain):** The orchestrator. Resides at `D:\hermes` (config: `config.yaml`) and uses persistent memory to retain project context across sessions. It listens to Slack `#sprint-main` and uses the `status-report` skill to track OpenClaw's output. Model: `gemini-3.1-flash-lite` (via Gemini free tier, secondary account).
-- **OpenClaw (Hands):** The coding agent. Receives commands from Hermes via Slack `#agent-coder` and executes shell/code commands locally. Model: `groq/llama-3.1-8b-instant` (via Groq free tier).
+- **OpenClaw (Hands):** The coding agent. Receives commands from Hermes via Slack `#agent-coder` and executes shell/code commands locally. Model: `google/gemini-2.5-flash` (via Gemini free tier).
 
 ### 2. Frontend (React/Vite)
 - **Framework:** React 18 + Vite
