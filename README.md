@@ -8,9 +8,8 @@ The app features a Laravel REST API with a SQLite database backend, and a React 
 ## Run Instructions
 
 ### 1. Agents & Services
-1. Start Ollama: (runs as a background service by default)
-2. Start OpenClaw: `openclaw gateway`
-3. Start Hermes: `hermes`
+1. Start OpenClaw: `openclaw gateway`
+2. Start Hermes: `hermes`
 
 ### 2. Backend (Laravel API)
 ```bash
@@ -37,7 +36,7 @@ Backend deployed to Render: (Running locally - see instructions above for judgin
 ## Model Selection & Rationale
 We chose a routing strategy that maximizes performance while staying on the 100% free tier.
 - **Hermes (Brain):** `gemini-3.1-flash-lite` (via Gemini free tier). It has a massive context window and fast reasoning, making it ideal for the orchestrator role which requires memory retention across complex sessions.
-- **OpenClaw (Hands):** `qwen2.5-coder` (via local Ollama). Since coding requires frequent, small, iterative generation loops without rate limit interruptions, we ran this completely locally. Unlimited execution is key.
+- **OpenClaw (Hands):** `google/gemini-2.5-flash` (via Gemini free tier). Fast inference and generous free-tier limits made it well suited for iterative code-generation loops.
 
 ## Agent Loop Verification
 You can see our agent activity loops inside the `agent-log.md` and the Slack screenshots inside the `evidence/` folder.
